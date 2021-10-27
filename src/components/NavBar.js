@@ -4,7 +4,7 @@ import { SocialIcon } from 'react-social-icons';
 
 export default function NavBar() {
     return (
-       <header className="bg-pink-400">
+       <header className="bg-pink-200">
            <div className="container mx-auto flex justify-between">
                <nav className="flex">
                    <NavLink to="/" 
@@ -15,19 +15,19 @@ export default function NavBar() {
 
                    <NavLink to="/post"
                    className="inline-flex items-center py-6 px-3 mr-4 hover:text-white text-2xl font-bold cursive tracking-widest"
-                   activeClassName="text-white bg-purple-400">
+                   activeClassName="text-black bg-yellow-100">
                        Blog
                    </NavLink>
 
                    <NavLink to="/project"
                    className="inline-flex items-center py-6 px-3 mr-4 hover:text-white text-2xl font-bold cursive tracking-widest"
-                   activeClassName="text-white bg-purple-400">
+                   activeClassName="text-black bg-purple-300">
                        Projects
                    </NavLink>
 
                    <NavLink to="/about"
                    className="inline-flex items-center py-6 px-3 mr-4 hover:text-white text-2xl font-bold cursive tracking-widest"
-                   activeClassName="text-white bg-purple-400">
+                   activeClassName="text-black bg-red-100">
                        About Me!
                    </NavLink>
                </nav>
