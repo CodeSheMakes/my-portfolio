@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import sanityClient from '../client.js';
 import night from '../Night01.png';
 import imageUrlBuilder from '@sanity/image-url';
+import BlockContent from "@sanity/block-content-to-react";
 
 
 const builder = imageUrlBuilder(sanityClient);
@@ -35,11 +36,12 @@ export default function About() {
           <img
             src={urlFor(author.authorImage).url()}
             className="rounded w-flex h-32 lg:w-flex lg:h-64 mr-8"
-            alt="Morgan"
+            alt="{author.name}"
           />
           <div className="text-lg flex flex-col justify-center">
             <h1 className="cursive text-6xl text-indigo-300 mb-4" aria-label="waving">
               👋🏿 Hey there, I'm{" "}
+              <BlockContent blocks={author.bio} projectId="we9gplbt" dataset="production" />
               <span className="text-purple-400">{author.name}</span>
             </h1>
             <p className="text-black-200 text-xl">{author.bio}</p>
