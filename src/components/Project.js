@@ -31,7 +31,7 @@ export default function Project() {
         <section className="grid grid-cols-2 gap-8">
           {projectData &&
             projectData.map((project, index) => (
-              <article className="relative rounded-lg shadow-xl bg-yellow-100 p-16">
+              <article className="relative rounded-lg shadow-xl bg-indigo-100 p-16">
                 <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-700">
                   <a
                     href={project.link}
@@ -66,7 +66,7 @@ export default function Project() {
                   >
                     View The Project{" "}
                     <span role="img" aria-label="right pointer">
-                      👉
+                      👉🏿
                     </span>
                   </a>
                 </div>
